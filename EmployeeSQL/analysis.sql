@@ -28,14 +28,14 @@ where last_name like('B%') and first_name='Hercules';
 
 --List each employee in the Sales department, including their employee number, last name, and first name.
 select d.dept_name, e.emp_no, e.last_name, e.first_name
-from (select * from lc.department where d.dept_name='Sales') d 
+from (select * from lc.department where dept_name='Sales') d 
 	left join lc.dept_emp de on d.dept_no=de.dept_no
 	inner join lc.employee e on de.emp_no=e.emp_no
 ;
 
 --List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
 select d.dept_name, e.emp_no, e.last_name, e.first_name
-from (sekect * from lc.department where d.dept_name in ('Sales','Development')) d 
+from (select * from lc.department where dept_name in ('Sales','Development')) d 
 	left join lc.dept_emp de on d.dept_no=de.dept_no
 	inner join lc.employee e on de.emp_no=e.emp_no
 order by d.dept_name;
