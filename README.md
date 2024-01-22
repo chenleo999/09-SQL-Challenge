@@ -3,6 +3,7 @@
 completed by Li Chen    1/22/2024
 
 part 1 - PostgreSQL
+
 steps:
 1. review 6 csv files and create table schema in proper order (employee/title/department -> salary/dept_emp/dept_manager)
 2. import all 6 tables under lc schema
@@ -20,12 +21,13 @@ steps:
 6. save sql file
 
 part 2 - bonus (perform same set of analysis in pandas)
+
 steps:
 1. import pandas
 2. read all 6 csv fils into dataframe
 3. merge, filter dataframe properly
 4. display columns requested
-5. save .ipynb file
+5. save bonus.ipynb file
 
 
 part 3 - edit readme, git add, commit and push
