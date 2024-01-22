@@ -7,9 +7,10 @@ part 1 - PostgreSQL
 steps:
 1. review 6 csv files and create table schema in proper order (employee/title/department -> salary/dept_emp/dept_manager)
 2. import all 6 tables under lc schema
-3. generate ERD, capture screen shot
-4. export table create script (shemata) sql file
-5. run sql query for requested analysis as below:
+3. generate ERD, capture screen shot, save as ERD.png
+4. export table create script (shemata), save as table_schemata.sql
+5. run \dt lc.* in PSQL tool, save screenshot as table_schemata.png
+6. build & run sql query for requested analysis as below:
   List the employee number, last name, first name, sex, and salary of each employee.
   List the first name, last name, and hire date for the employees who were hired in 1986.
   List the manager of each department along with their department number, department name, employee number, last name, and first name.
@@ -18,7 +19,7 @@ steps:
   List each employee in the Sales department, including their employee number, last name, and first name.
   List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
   List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
-6. save sql file
+7. save as analysis.sql
 
 part 2 - bonus (perform same set of analysis in pandas)
 
